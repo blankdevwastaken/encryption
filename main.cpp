@@ -6,8 +6,13 @@ const std::string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 std::string encrypt(std::string plaintext, int key);
 
 int main() {
-    std::string plaintext = "HELLO";
-    int key = 3;
+    std::string plaintext;
+    int key;
+
+	std::cout << "Enter the plaintext: ";
+	std::cin >> plaintext;
+	std::cout << "Enter the key: ";
+	std::cin >> key;
 
     std::string ciphertext = encrypt(plaintext, key);
 
